@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User,auth
 from myapp.models import Contact,Product,Orders,OrderUpdate
 from math import ceil
-import stripe
+# import stripe
 from django.conf import settings
 import json
 from django.views.decorators.csrf import csrf_exempt
@@ -189,7 +189,7 @@ def profile(request):
 
 
 
-stripe.api_key = settings.STRIPE_SECRET_KEY
+# stripe.api_key = settings.STRIPE_SECRET_KEY
 
 # def stripeCheckout(request):
 #      checkout_session = stripe.checkout.Session.create(
